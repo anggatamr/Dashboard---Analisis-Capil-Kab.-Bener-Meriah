@@ -536,7 +536,7 @@ elif page == "Proyeksi Masa Depan" or page == "🔮 Proyeksi Masa Depan":
             f_df = pd.DataFrame({"Tanggal": f_dates, "Prediksi Jumlah": forecast.values})
             
             st.subheader("📈 Grafik Peramalan 14 Hari Kedepan")
-            st.write("Garis oranye menunjukkan perkiraan jumlah aktivitas.")
+            st.write("Grafik garis dibawah menunjukkan perkiraan jumlah aktivitas.")
             
             st.line_chart(f_df.set_index("Tanggal"), color=current_theme['primary'])
             
