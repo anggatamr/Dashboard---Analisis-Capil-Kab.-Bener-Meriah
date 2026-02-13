@@ -256,8 +256,8 @@ st.sidebar.info("Gunakan filter di atas untuk menyesuaikan tampilan data statist
 # --- Content Pages ---
 # --- Content Pages ---
 if page == "Ringkasan Data" or page == "🏠 Ringkasan Data": # Handle with/without emoji
-    st.markdown(f"# {current_theme['icon']} <span class='gradient-text'>Ringkasan Data Kependudukan</span>", unsafe_allow_html=True)
-    st.markdown("Gambaran umum aktivitas pengurusan dokumen kependudukan periode **2025-2026**.")
+    st.markdown(f"# {current_theme['icon']} <span class='gradient-text'>Ringkasan Data Pencetakan KTP</span>", unsafe_allow_html=True)
+    st.markdown("Gambaran umum aktivitas pencetakan KTP di Disdukcapil Kabupaten Bener Meriah periode **21/08/2025-09/02/2026**.")
     
     if df_dash.empty:
         st.warning("Data belum dimuat.")
