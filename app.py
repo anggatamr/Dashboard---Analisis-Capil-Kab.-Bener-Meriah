@@ -300,7 +300,14 @@ if page == "Ringkasan Data" or page == "🏠 Ringkasan Data": # Handle with/with
                 if not status_counts.empty:
                     colors = [current_theme['primary'], '#EF4444']
                     wedges, texts, autotexts = ax_pie.pie(status_counts, labels=status_counts.index, autopct='%1.1f%%', 
-                                                        startangle=140, colors=colors, textprops=dict(color="white"))
+                                                        startangle=90, colors=colors, textprops=dict(color="#111827"))
+                    
+                    # Add Legend
+                    ax_pie.legend(wedges, status_counts.index,
+                                title="Status Dokumen",
+                                loc="center left",
+                                bbox_to_anchor=(1, 0, 0.5, 1))
+                    
                     st.pyplot(fig_pie)
                 else:
                     st.write("Data tidak cukup.")
