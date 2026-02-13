@@ -317,10 +317,10 @@ if page == "Ringkasan Data" or page == "🏠 Ringkasan Data": # Handle with/with
 elif page == "Peta Sebaran & Prediksi" or page == "🎯 Peta Sebaran & Prediksi":
     st.markdown(f"# {current_theme['icon']} <span class='gradient-text'>Peta Sebaran & Prediksi</span>", unsafe_allow_html=True)
     st.markdown("""
-    Fitur ini menggunakan **Kecerdasan Buatan (AI)** untuk membantu analisis mendalam:
+    Fitur ini menggunakan **Model Machine Learning(ML)** untuk membantu analisis mendalam:
     
-    *   **Prediksi Status**: Memperkirakan apakah dokumen akan diambil tepat waktu berdasarkan pola sejarah.
-    *   **Peta Sebaran**: Mengelompokkan pola aktivitas masyarakat untuk perencanaan distribusi yang lebih baik.
+    *   **Prediksi Status**: Memperkirakan apakah dokumen akan diambil tepat waktu berdasarkan pola sejarah(Classification).
+    *   **Peta Sebaran**: Mengelompokkan pola aktivitas masyarakat untuk perencanaan distribusi yang lebih baik(Clustering).
     """)
     
     tab1, tab2 = st.tabs(["🔮 Cek Status Dokumen", "🗺️ Peta Pola Wilayah"])
