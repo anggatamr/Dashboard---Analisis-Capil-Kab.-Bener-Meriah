@@ -5,7 +5,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)
 ![Status](https://img.shields.io/badge/Status-Educational%20Project-orange)
 
-Selamat datang di **Dashboard Analisis Kependudukan**, sebuah aplikasi berbasis web yang dirancang untuk membantu visualisasi, analisis, dan prediksi terkait layanan administrasi kependudukan (KTP/KK/Akta).
+Selamat datang di **Dashboard Analisis Kependudukan Kabupaten Bener Meriah**, sebuah Dashboard berbasis web yang dirancang untuk membantu visualisasi, analisis, dan prediksi terkait layanan administrasi kependudukan di Kabupaten Bener Meriah Provinsi Aceh dimulai dari 21/08/2025 sampai dengan 09/02/2026 khususnya untuk Kartu Tanda Penduduk (KTP/).
 
 Aplikasi ini menggabungkan **Data Science** dan **Machine Learning** untuk memberikan wawasan yang lebih dalam daripada sekadar laporan statistik biasa.
 
