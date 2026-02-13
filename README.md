@@ -1,4 +1,4 @@
-# Dashboard---Analisis-Capil-Kab.-Bener-Meriah[README.md](https://github.com/user-attachments/files/25295243/README.md)
+# Dashboard---Analisis-Capil-Kab.-Bener-Meriah (https://github.com/user-attachments/files/25295243/README.md)
 [README.md](https://github.com/user-attachments/files/25295243/README.md)
 # Dashboard Analisis Kependudukan (Dukcapil) 🇮🇩📊
 
