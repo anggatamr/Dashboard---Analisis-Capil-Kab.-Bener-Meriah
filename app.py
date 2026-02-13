@@ -590,3 +590,26 @@ elif page == "Kritik & Saran" or page == "💬 Kritik & Saran":
                         st.error(f"Gagal menyimpan masukan: {e}")
                 else:
                     st.warning("⚠️ Mohon isi kolom kritik/saran.")
+    # --- Admin Area (To View Data) ---
+    st.markdown("---")
+    with st.expander("🔐 Admin Area (Lihat Masukan Masuk)"):
+        passwd = st.text_input("Masukkan Kode Akses", type="password")
+        if passwd == "admin123": # Simple hardcoded password for education
+            if pd.io.common.file_exists("feedback.csv"):
+                df_feedback = pd.read_csv("feedback.csv")
+                st.dataframe(df_feedback, use_container_width=True)
+                
+                # Download Button
+                csv = df_feedback.to_csv(index=False).encode('utf-8')
+                st.download_button(
+                    "📥 Download Data Feedback (.csv)",
+                    csv,
+                    "feedback_data.csv",
+                    "text/csv",
+                    key='download-csv'
+                )
+            else:
+                st.info("Belum ada data masukan.")
+        elif passwd:
+            st.error("Kode akses salah.")
+
