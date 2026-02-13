@@ -215,6 +215,7 @@ def show_disclaimer():
     *   Masih banyak aspek yang dapat dikembangkan lebih lanjut.
     *   Data dan prediksi mungkin belum sepenuhnya akurat.
     *   Kritik dan saran sangat diapresiasi!
+    *   Disarankan untuk mengakses dashboard ini menggunakan tema terang agar lebih nyaman dibaca.
     
     *Terima kasih telah mencoba.* 🙏
     ### by Angga Tamara
@@ -321,7 +322,7 @@ elif page == "Peta Sebaran & Prediksi" or page == "🎯 Peta Sebaran & Prediksi"
         st.subheader("🔮 Prediksi Pengambilan Dokumen")
         st.info("""
         **ℹ️ Penjelasan Kegunaan:**
-        Fitur ini membantu Anda memprediksi apakah seorang pemohon camderung akan **langsung mengambil** dokumennya atau **menunda**. 
+        Fitur ini membantu Anda memprediksi apakah seorang pemohon cenderung akan **langsung mengambil** dokumennya atau **menunda**. 
         
         *   **Sudah Diambil**: Kemungkinan besar pemohon akan datang tepat waktu.
         *   **Belum Diambil**: Pemohon berisiko tidak mengambil dokumen. *Tips: Hubungi pemohon ini lebih dulu.*
@@ -590,6 +591,7 @@ elif page == "Kritik & Saran" or page == "💬 Kritik & Saran":
                         st.error(f"Gagal menyimpan masukan: {e}")
                 else:
                     st.warning("⚠️ Mohon isi kolom kritik/saran.")
+
     # --- Admin Area (To View Data) ---
     st.markdown("---")
     with st.expander("🔐 Admin Area (Lihat Masukan Masuk)"):
@@ -612,4 +614,3 @@ elif page == "Kritik & Saran" or page == "💬 Kritik & Saran":
                 st.info("Belum ada data masukan.")
         elif passwd:
             st.error("Kode akses salah.")
-
